@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('updates', url='https://t.me/josprojects')
+                InlineKeyboardButton('updates', url='https://t.me/TamilMVOfficials')
             ],
             [
                 InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -50,8 +50,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('updates', url='https://t.me/TamilMVOfficials'),
+            InlineKeyboardButton('movie Group', url='https://t.me/TamilMV_Collections')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -98,8 +98,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('updates', url='https://t.me/TamilMVOfficials'),
+            InlineKeyboardButton('movie Group', url='https://t.me/TamilMV'Collections')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -146,11 +146,11 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('support', url='https://t.me/JOSPSupport'),
-                    InlineKeyboardButton('channel', url='https://t.me/JosProjects')
+                    InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
+                    InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
                 ],
                 [
-                    InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                    InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
                 ]
                 ]
             try:
@@ -260,11 +260,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('support', url='https://t.me/JOSPSupport'),
-            InlineKeyboardButton('channel', url='https://t.me/JosProjects')
+            InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
+            InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
         ],
         [
-            InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
         ]
         ]
     await client.send_cached_media(
