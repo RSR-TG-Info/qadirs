@@ -361,11 +361,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('channel', url='https://t.me/JosProjects')
+                InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
+                InlineKeyboardButton('Channel', url='https://t.me/Valimai_Tamil_HDT')
             ],
             [
-                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
             ]
             ]
             
@@ -415,11 +415,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('channel', url='https://t.me/JosProjects')
+                InlineKeyboardButton('support', url='https://t.me/+KR932w7UYCowOTA1'),
+                InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
             ],
             [
-                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/TamilMV_Collections')
             ]
             ]
         await query.answer()
@@ -898,14 +898,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/+q9NMdy0rY10zZWZl")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/TamilMVOfficials")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/+q9NMdy0rY10zZWZl")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/TamilMVOfficials")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -943,7 +943,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/+q9NMdy0rY10zZWZl'>© IMDb (Series & Movies) Studio</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/+KR932w7UYCowOTA1'>𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
