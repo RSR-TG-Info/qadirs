@@ -361,11 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
-                InlineKeyboardButton('Channel', url='https://t.me/Valimai_Tamil_HDT')
-            ],
-            [
-                InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
+                InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥', url=f'https://t.me/TamilMV_Collections')
             ]
             ]
             
@@ -415,10 +411,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('support', url='https://t.me/+KR932w7UYCowOTA1'),
-                InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
-            ],
-            [
                 InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/TamilMV_Collections')
             ]
             ]
@@ -434,10 +426,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add Me To Your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Help', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -449,29 +441,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('admin', callback_data='admin'),
-            InlineKeyboardButton('connect', callback_data='coct'),
-            InlineKeyboardButton('filters', callback_data='auto_manual'),
+            InlineKeyboardButton('Admin', callback_data='admin'),
+            InlineKeyboardButton('Connect', callback_data='coct'),
+            InlineKeyboardButton('Filters', callback_data='auto_manual'),
             ],[
-            InlineKeyboardButton('gtrans', callback_data='gtrans'),
-            InlineKeyboardButton('info', callback_data='info'),
-            InlineKeyboardButton('memes', callback_data='memes'),
+            InlineKeyboardButton('Gtrans', callback_data='gtrans'),
+            InlineKeyboardButton('Info', callback_data='info'),
+            InlineKeyboardButton('Memes', callback_data='memes'),
             ],[
-            InlineKeyboardButton('paste', callback_data='paste'),
-            InlineKeyboardButton('password gen', callback_data='genpassword'),
-            InlineKeyboardButton('pin', callback_data='pin'),
+            InlineKeyboardButton('Paste', callback_data='paste'),
+            InlineKeyboardButton('Password Gen', callback_data='genpassword'),
+            InlineKeyboardButton('Pin', callback_data='pin'),
             ],[
-            InlineKeyboardButton('purge', callback_data='purge'),
-            InlineKeyboardButton('restric', callback_data='restric'),
-            InlineKeyboardButton('search', callback_data='search'),
+            InlineKeyboardButton('Purge', callback_data='purge'),
+            InlineKeyboardButton('Restric', callback_data='restric'),
+            InlineKeyboardButton('Search', callback_data='search'),
             ],[
-            InlineKeyboardButton('share text', callback_data='sharetext'),
-            InlineKeyboardButton('music', callback_data='music'),
-            InlineKeyboardButton('tt-speech', callback_data='tts'),
+            InlineKeyboardButton('Share Text', callback_data='sharetext'),
+            InlineKeyboardButton('Music', callback_data='music'),
+            InlineKeyboardButton('TT-Speech', callback_data='tts'),
             ],[
-            InlineKeyboardButton('tgraph', callback_data='tgraph'),
-            InlineKeyboardButton('url shortner', callback_data='shortner'),
-            InlineKeyboardButton('zombies', callback_data='zombies'),
+            InlineKeyboardButton('TGraph', callback_data='tgraph'),
+            InlineKeyboardButton('Url Shortner', callback_data='shortner'),
+            InlineKeyboardButton('Zombies', callback_data='zombies'),
             ],[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
@@ -483,12 +475,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('status', callback_data='stats'),
-            InlineKeyboardButton('source', callback_data='source')
+            InlineKeyboardButton('Status', callback_data='stats'),
+            InlineKeyboardButton('Source', callback_data='source')
             ],[
-            InlineKeyboardButton('search movie', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍Search', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('help & commands', callback_data='help')
+            InlineKeyboardButton('Help', callback_data='help')
             ],[
             InlineKeyboardButton('« Back', callback_data='start'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
@@ -549,8 +541,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "auto_manual":
         buttons = [[
-            InlineKeyboardButton('auto', callback_data='autofilter'),
-            InlineKeyboardButton('manual', callback_data='manualfilter')
+            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
+            InlineKeyboardButton('Manual Filter', callback_data='manualfilter')
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
