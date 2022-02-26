@@ -132,7 +132,7 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
+                    InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥, url=f'https://t.me/TamilMV_Collections')
                 ]
                 ]
             try:
@@ -242,7 +242,7 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
+            InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥', url=f'https://t.me/TamilMV_Collections')
         ]
         ]
     await client.send_cached_media(
