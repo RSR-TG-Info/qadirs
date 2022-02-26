@@ -86,8 +86,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('help', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -131,10 +131,6 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             buttons = [
-                [
-                    InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
-                    InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
-                ],
                 [
                     InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
                 ]
@@ -245,10 +241,6 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [
-        [
-            InlineKeyboardButton('Group', url='https://t.me/+KR932w7UYCowOTA1'),
-            InlineKeyboardButton('channel', url='https://t.me/Valimai_Tamil_HDT')
-        ],
         [
             InlineKeyboardButton('Movie Group', url=f'https://t.me/TamilMV_Collections')
         ]
