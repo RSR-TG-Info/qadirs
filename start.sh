@@ -1,5 +1,5 @@
 echo "Cloning Repo, Please Wait..."
-git clone -b master https://github.com/Naveen-TG/Masterolic.git /Masterolic
+git clone https://github.com/Naveen-TG/Masterolic.git /Masterolic
 cd /Masterolic
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
