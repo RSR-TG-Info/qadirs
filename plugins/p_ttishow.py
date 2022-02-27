@@ -10,10 +10,21 @@ from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/JosProjects --------------------------------------"""
 
-@Client.on_message(filters.new_chat_members & filters.group)
-async def save_group(bot, message):
-    r_j_check = [u.id for u in message.new_chat_members]
-    if temp.ME in r_j_check:
+@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
+async def start(client, message):
+    if message.chat.type in ['group', 'supergroup']:
+        buttons = [
+            [
+                InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials')
+            ],
+            [
+                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Close ✗', callback_data="close_data"),
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_sticker(sticker="CAACAgUAAxkBAAIMvmIM7BVb9Jysuazt7s7WvczPXiBxAAIVAQACyJRkFGZEMKKnFWwTHgQ", reply_markup=reply_markup)
+        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
             total=await bot.get_chat_members_count(message.chat.id)
             r_j = message.from_user.mention if message.from_user else "Anonymous" 
