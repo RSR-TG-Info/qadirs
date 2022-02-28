@@ -10,6 +10,17 @@ from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/JosProjects --------------------------------------"""
 
+buttonrs = [
+            [
+                InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials')
+            ],
+            [
+                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Close ✗', callback_data="close_data"),
+            ]
+            ]
+
+
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
@@ -65,9 +76,7 @@ async def start(client, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>",
-                disable_web_page_preview = True)
+                temp.MELCOW['welcome'] = await message.reply_sticker(sticker="CAACAgUAAxkBAAIMvmIM7BVb9Jysuazt7s7WvczPXiBxAAIVAQACyJRkFGZEMKKnFWwTHgQ", reply_markup=InlineKeyboardMarkup(buttonrs))
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
