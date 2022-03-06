@@ -32,5 +32,5 @@ async def password(bot, update):
     else:
         random_value = "".join(random.sample(password, limit))
         text = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**\n\nJoin @JOSPSupport",
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('join projects channel', url='https://telegram.me/josprojects')]])
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥', url='https://telegram.me/TamilMV_Collections')]])
     await message.edit_text(text, True)
