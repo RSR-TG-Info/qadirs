@@ -540,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick')
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stickerid')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -621,13 +621,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "stick":
+    elif query.data == "stickerid":
         buttons = [[
             InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.STICK_TXT,
+            text=Script.STICK_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
