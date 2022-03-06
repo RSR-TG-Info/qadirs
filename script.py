@@ -100,16 +100,25 @@ You can also customise the contents of your message with contextual data. For ex
 2. Send <code>/connect</code> for connecting me to ur PM
 
 <b>Commands and Usage:</b>
-• /connect  - connect a particular chat to your PM.
+ /connect  - connect a particular chat to your PM.
 • /disconnect  - disconnect from a chat.
 • /connections - list all your connections."""
 
     COVID_TXT = """<b><u>𝖢𝗈𝗏𝗂𝖽 19 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇</u><b/>
-𝖢𝗈𝗋𝗈𝗇𝖺 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝗈𝖿 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 / 𝖳𝗈 𝗄𝗇𝗈𝗐 𝗍𝗁𝖾 𝖼𝗈𝗏𝗂𝖽 𝗂𝗇𝖿𝗈 𝗈𝖿 𝖺𝗇𝗒 𝖼𝗈𝗎𝗇𝗍𝗋𝗒            
-<b>𝖢𝗈𝗆𝗆𝖺𝗇𝖽:</b>
-/covid [country name] - 𝖦𝖾𝗍 𝗂𝗇𝖿𝗈 𝖺𝖻𝗈𝗎𝗍 𝖼𝗈𝗏𝗂𝖽 𝖼𝖺𝗌𝖾𝗌 𝗂𝗇 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒
+
+- It is Used to Find 𝖢𝗈𝗋𝗈𝗇𝖺 I𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝗈𝖿 Y𝗈𝗎𝗋 C𝗈𝗎𝗇𝗍𝗋𝗒 / 𝖳𝗈 𝗄𝗇𝗈𝗐 𝗍𝗁𝖾 𝖼𝗈𝗏𝗂𝖽 𝗂𝗇𝖿𝗈 𝗈𝖿 𝖺𝗇𝗒 𝖼𝗈𝗎𝗇𝗍𝗋𝗒            
+- 𝖢𝗈𝗎𝗅𝖽 get True and current details and cases
+     
+<b>NOTE:</b>
+
+1. Users Can Use this to know the Current COVID Info
+2. All Users of Dhanush can access this Feature
+
+<b>𝖢𝗈𝗆𝗆𝖺𝗇𝖽 and Usage</b>
+• /covid (country Name) - 𝖦𝖾𝗍 𝗂𝗇𝖿𝗈 𝖺𝖻𝗈𝗎𝗍 𝖼𝗈𝗏𝗂𝖽 𝖼𝖺𝗌𝖾𝗌 𝗂𝗇 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒
+
 <b>𝖴𝗌𝖺𝗀𝖾</b>
-- 𝖢𝗈𝗎𝗅𝖽 𝖻𝖾 𝗎𝗌𝖾𝖽 𝗂𝗇 𝗉𝗆 𝖺𝗇𝖽 𝗀𝗋𝗈𝗎𝗉𝗌"""
+- 𝖢𝗈𝗎𝗅𝖽 𝖻𝖾 𝗎𝗌𝖾𝖽 𝗂𝗇 𝗉𝗆 𝖺𝗇𝖽 𝗀𝗋𝗈𝗎𝗉𝗌."""
      
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
