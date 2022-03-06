@@ -530,4 +530,4 @@ async def save_template(client, message):
     
 @Client.on_message(filters.command("about"))
 async def aboutrs(client, message):
-    await message.reply_text(text=Script.ABOUT_TXT.format(temp.B_NAME), disable_eeb_page_preview=True)
+    await message.reply_text(text=Script.ABOUT_TXT.format(temp.B_NAME), disable_web_page_preview=True)
