@@ -119,6 +119,17 @@ You can also customise the contents of your message with contextual data. For ex
 
 <b>𝖴𝗌𝖺𝗀𝖾</b>
 - 𝖢𝗈𝗎𝗅𝖽 𝖻𝖾 𝗎𝗌𝖾𝖽 𝗂𝗇 𝗉𝗆 𝖺𝗇𝖽 𝗀𝗋𝗈𝗎𝗉𝗌."""
+
+    STICKER_TXT ="""Help: <b>StickerID</b>
+
+- It is Used to get the id of the stickers
+- Can get instant and unexpirable ids
+
+<b>Commands and Usages</b>
+• /stickerid - Reply to a Sticker to get the ids 
+
+<b>Usages</b>
+𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 Use Commands 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
      
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
