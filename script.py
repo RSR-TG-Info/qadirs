@@ -24,7 +24,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 ➥ Build Status: v2.0.1 [ Beta ]"""
 
     SOURCE_TXT = """<b>Source:</b>
-Dhamuah is not a Open source project.
+Dhanush is not a Open source project.
 
 <b>DEVS:</b>
 - <a href='https://t.me/Naveen_TG'>Naveen-TG</a>
