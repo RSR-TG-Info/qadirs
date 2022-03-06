@@ -9,7 +9,11 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
     HELP_TXT = """Hey {}
 
-<b>Here Is The Help For My Commands.</b>"""
+<b>Here Is The Help For My Commands.</b>
+
+/start - C𝗁𝖾𝖼𝗄 W𝗁𝖾𝗍𝗁𝖾𝗋 a𝗆 O𝗇𝗅𝗂𝗇𝖾 
+/help - G𝖾𝗍 T𝗁𝗂𝗌 H𝖾𝗅𝗉 M𝖾𝗌𝗌𝖺𝗀𝖾
+/about - A𝖻𝗈𝗎𝗍 M𝖾"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/Y2say'>Dhanush-TG</a>
