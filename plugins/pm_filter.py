@@ -518,26 +518,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connect', callback_data='coct'),
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
             ],[
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
             InlineKeyboardButton('Gtrans', callback_data='gtrans'),
             InlineKeyboardButton('Info', callback_data='info'),
-            InlineKeyboardButton('Memes', callback_data='memes'),
             ],[
+            InlineKeyboardButton('Memes', callback_data='memes'),
             InlineKeyboardButton('Paste', callback_data='paste'),
             InlineKeyboardButton('Password Gen', callback_data='genpassword'),
-            InlineKeyboardButton('Pin', callback_data='pin'),
             ],[
+            InlineKeyboardButton('Pin', callback_data='pin'),
             InlineKeyboardButton('Purge', callback_data='purge'),
             InlineKeyboardButton('Restric', callback_data='restric'),
-            InlineKeyboardButton('Search', callback_data='search'),
             ],[
+            InlineKeyboardButton('Search', callback_data='search'),
             InlineKeyboardButton('Share Text', callback_data='sharetext'),
             InlineKeyboardButton('Music', callback_data='music'),
-            InlineKeyboardButton('TT-Speech', callback_data='tts'),
             ],[
+            InlineKeyboardButton('TT-Speech', callback_data='tts'),
             InlineKeyboardButton('TGraph', callback_data='tgraph'),
             InlineKeyboardButton('Url Shortner', callback_data='shortner'),
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
             ],[
+            InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -645,6 +646,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "covid":
+        buttons = [[
+            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.COVID_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )         
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
