@@ -9,7 +9,7 @@ googletrans==3.1.0a0
 gTTS
 asyncio==3.4.3
 requests
-indbpy
+indb
 pyshorteners
 youtube-search-python==1.4.6
 youtube_search
