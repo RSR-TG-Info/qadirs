@@ -89,6 +89,9 @@ You can also customise the contents of your message with contextual data. For ex
 2. Make sure that your channel does not contains camrips, porn and fake files.
 3. Forward the last message to me with quotes.
  I'll add all the files in that channel to my db."""
+    LYRICS_TXT = """Help: <b>Lyrics</b>
+
+- Use /lyrics to get Lyrics of a song"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
