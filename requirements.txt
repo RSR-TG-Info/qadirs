@@ -21,3 +21,4 @@ python-arq
 ffmpeg-python
 requests
 ytthumb
+tswift
