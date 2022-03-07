@@ -10,14 +10,11 @@ gTTS
 asyncio==3.4.3
 requests
 pyshorteners
-bs4
-imdbpy
 youtube-search-python==1.4.6
 youtube_search
 youtube-dl
 yt-dlp
 wget
-python-arq
 ffmpeg-python
 requests
 ytthumb
